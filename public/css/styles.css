@@ -1,0 +1,460 @@
+/* :root{
+    --colorAmarillo: #EAC926;
+    --colorAzul: #03264C;
+    --colorCeleste: #0044AA;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+    --colorNegro: #000;
+    --colorBlanco: #FFF;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+p{
+    font-size: 12px;
+}
+   
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   text-align: center;
+   width: 100%;
+}
+footer section i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    transition: all 500ms;
+}
+footer section h2{
+    font-size: 1.3rem;
+}
+footer section p{
+    margin: 0 30px;
+}
+.last-visit h3,
+.offers h3{
+    font-size: 24px;
+}
+h2.copyright{
+    font-size: 0.9rem;
+    padding-right: 25vw;
+    font-weight: 400;
+}
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+header{
+    background-color: #EAC926;
+    padding-bottom: 30px;
+}
+
+div.top-header{
+    padding: 5%;
+    /* Clase 14 - Micro desafío 3 */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Clase 14 - Micro desafío 3 */
+header figure.logo{
+    width: 50%;
+    max-width: 220px;
+    padding: 10px;
+}
+
+/* Clase 14 - Micro desafío 3 */
+header .form{
+    width: 50%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+header .form .input{
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px;
+    margin-bottom: 2px;
+    width: 70%;
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+}
+
+header .form .submit{
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    background-color: #FFF;
+    border: 1px solid #000;
+    width: 12%;
+    /* Clase 14 - Micro desafío 3 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header nav{
+    font-size: 12px;
+    /* Clase 13 Code-review */
+    display: none;
+}
+
+header nav ul{
+    margin-bottom: 10px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+div.burger-menu{
+    text-align: center;
+    margin: auto;
+    padding: 10px 0px 20px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+section.banner div{
+    width: 100%;
+}
+
+section.banner div img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main section article{
+    background-color: #FFF;
+    margin: 10px 0;
+}
+
+main section article img{
+    width: 100%;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    /* Clase 16 - Micro desafío 1 */
+    position: relative;
+}
+
+article div.main-article i{
+    font-size: 16px;
+    text-align: center;
+    background-color: #FFF;
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+    border: 1px solid #39b54a;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    /* Clase 16 - Micro desafío 1 */
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    transition: all 600ms;
+}
+/* Clase 16 - Micro desafío 1 */
+article div.main-article i:hover{
+    transform: rotate(-90deg);
+}
+
+/* Clase 14 - Micro desafío 1 */
+.price-and-discount{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Clase 14 - Micro desafío 1 */
+.price-and-discount .price {
+    width: 28%;
+}
+
+/* Clase 14 - Micro desafío 1 */
+.price-and-discount .discount {
+    width: 45%;
+}
+
+article div.main-article h4{
+    margin-top: 20px;
+    display: none;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+/*----------Formularios Login-----------*/
+h2{
+    text-align: center;
+    padding: 20px;
+}
+form{
+    display:flex;
+    flex-wrap: wrap;
+}
+.form-div {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    justify-content: center ;
+    flex-wrap: wrap;
+}
+.form-div input{
+    width:55%;
+    border-radius: 8px;
+    height: 25px;
+    border: none;
+}
+.form-button{
+    display: flex;
+    justify-content: center;
+    width: 100%;   
+}
+.form-button button{
+    background-color: blue;
+    color: white;
+    width: 55%;
+    margin-top: 30px;
+    border-radius: 8px;
+    height: 25px;
+}
+/*Formulario register*/
+.form-div label{
+    width: 100%;
+    text-align: left;
+    margin-left: 22.5%;
+}
+/*Formulario interests*/
+.form-interests{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-interests label{
+    width:55%;
+    margin-left: 22.5%;
+}
+.form-profile{
+    margin-left:22.5%;
+    margin-top: 10px;
+}
+.form-label{
+    margin-bottom: 5px;
+}
+/*-----Buttons------*/
+.form-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 22.5%;
+}
+.form-buttons button{
+    background-color:blue;
+    color: white;
+    width: 80px;
+    margin-top: 30px;
+    border-radius: 8px;
+    height: 25px;
+}
+/*hover para los inputs*/
+.form-div input:hover{
+    font-weight: bold;
+}
+/* Clase 16 - Micro desafío 2 */
+.login-form button{
+    transition: all 0.6s;
+}
+/* Clase 16 - Micro desafío 2 */
+.login-form button:hover{
+    background-color: #0331ea;
+}
+
+/* media query para navegación en tablets */
+@media (min-width: 520px){
+    .logo{
+        min-width: 200px;
+    }
+    main section div article{
+         /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
+        /* Clase 16 - Micro desafío 1 */
+        box-shadow: none;
+        transition: all 1s;
+    }
+    /* Clase 16 - Micro desafío 1 */
+    main section div article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    article div.main-article h4{
+         /* display: block; */
+        /* Clase 16 - Micro desafío 1 */
+        display: none;
+    }
+      /* Clase 16 - Micro desafío 1 */
+      main section div article:hover h4{
+        display: block;
+    }
+    /* Clase 13 code-review */
+    div.burger-menu{
+        display: none;
+    }
+    /* Clase 13 code-review */
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    header nav ul{
+        display: flex
+    }
+    header nav ul li{
+        margin: 0 5px;
+    }
+    /* Clase 14 - Micro desafío 1 */
+    p.price{
+        min-width: 85px;
+        max-width: 85px;
+    }
+
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+    
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products article{
+        width: 45%;
+    }
+    .form-interests{
+        justify-content: center;
+    }
+    footer section{
+        width: 100%;
+    }
+}
+
+/* media query para navegación en desktop */
+@media (min-width: 960px){
+    /* Clase 14 - Micro desafío 2 */
+    main section div.products article{
+        width: 22%;
+    } 
+    header{
+        display:flexbox;
+        max-height: 250px;
+        align-items:center;
+    }
+    div.top-header{
+        justify-content:space-between;
+        max-width: 1100px;
+        max-height: 150px; 
+        margin: auto;
+    }  
+    div.top-header p.copy-header{
+        text-align: right;
+        width: 300px;
+        align-self: center;
+        font-size: 15px  
+    }
+    header nav{
+        margin: auto;
+        max-width: 1000px;
+        font-size: 15px;
+    }
+  .form-profile{
+    width: 100%;
+  }
+  .form-interests{
+    width: 66.5%;
+  }
+  footer section{
+    width:33%
+  }
+ h2.copyright{
+    width: 350px;
+    padding: 0;
+  }
+  footer section i:hover {
+    color: rgb(111, 133, 133);
+  }
+}
+
+
+
+
+
+
