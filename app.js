@@ -25,5 +25,5 @@ app.get('/login', (req, res) => res.sendFile(path.join(viewsPath, 'login.html'))
 //app.listen(port, () => console.log(`Servidor corriendo en el puerto ${port}!`));//
 //para Heroku, las dos opciones//
 app.listen (process.env.PORT ||port, ()=>{
-    console.log('Servidor muy funcionando bien');
+    console.log('Servidor funcionando bien');
 });
