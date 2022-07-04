@@ -100,10 +100,10 @@ header .form{
 }
 /*header input*/
 form.form input{
-    width: 60%;
+    width: 65%;
 }
 
-header .form .input{
+/*header .form .input{
     display: inline-block;
     font-size: 12px;
     padding: 2px;
@@ -126,11 +126,11 @@ header .form .submit{
     background-color: #FFF;
     border: 1px solid #000;
     width: 12%;
-    /* Clase 14 - Micro desafío 3 */
+    /* Clase 14 - Micro desafío 3 
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 header div.top-header p{
     width: 100%;

@@ -4,7 +4,7 @@ const path = require('path');
 // guardamos en un constante app la funcionalidad de express()
 const app = express();
 // definimos el puerto en el que se va a levantar el servidor
-const port = 3030;
+const port = process.env.PORT || 3030;
 // definimos las rutas para los archivos estáticos(públicos) y otra para las vistas
 const viewsPath = path.join(__dirname, 'views');
 const publicPath = path.join(__dirname, 'public');
@@ -24,6 +24,6 @@ app.get('/login', (req, res) => res.sendFile(path.join(viewsPath, 'login.html'))
 // Levantamos el servidor con app.listen(port)
 //app.listen(port, () => console.log(`Servidor corriendo en el puerto ${port}!`));//
 //para Heroku, las dos opciones//
-app.listen (process.env.PORT ||port, ()=>{
-    console.log('Servidor funcionando bien');
+app.listen (port, ()=>{
+    console.log('Servidor funcionando en puerto ' + port);
 });
