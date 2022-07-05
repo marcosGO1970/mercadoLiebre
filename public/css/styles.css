@@ -167,7 +167,7 @@ div.burger-menu{
 
 div.burger-menu i{
     background-color: #0044AA;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #FFF;
     font-size: 20px;
     padding: 10px;
@@ -458,7 +458,45 @@ form{
   }
 }
 
-
+/*----- Dropdown Button---- */
+.dropbtn {
+    background-color: #EAC926;
+    color: white;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .burger-menu {
+    position: relative;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -60px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .burger-menu:hover .dropdown-content {display: block;}
+  
+  
 
 
 
