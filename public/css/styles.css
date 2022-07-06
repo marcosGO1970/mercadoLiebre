@@ -30,6 +30,7 @@ footer{
     justify-content: center;
    text-align: center;
    width: 100%;
+   background-color: #fff;
 }
 footer section i{
     font-size: 2em;
@@ -49,7 +50,6 @@ footer section p{
 }
 h2.copyright{
     font-size: 0.9rem;
-    padding-right: 25vw;
     font-weight: 400;
 }
 .price{
